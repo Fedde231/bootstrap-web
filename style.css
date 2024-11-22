@@ -1,0 +1,131 @@
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+.my-custom-row {
+    display: flex;
+    background-color: rgb(255, 174, 0);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar-inner {
+    background-color: transparent;
+}
+
+.my-custom-row3 {
+    display: flex;
+    background-color: rgb(255, 221, 0);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: -20px;
+    left: 0px;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.my-custom-row h1,
+.my-custom-row h6 {
+    margin-bottom: 20px;
+}
+
+.btn-invert {
+    background-color: rgb(118, 113, 103);
+    color: white;
+    padding: 0px;
+}
+
+.btn-invert:hover {
+    filter: invert(1);
+    color: black;
+}
+
+
+.hero_img__wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .my-custom-row .col-sm-4 {
+        text-align: center;
+    }
+
+    .hero_img__wrapper img {
+        width: 100%;
+        height: auto;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.btn-sm {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+}
+
+.changedcolor {
+    background-color: rgb(255, 174, 0);
+}
+
+/* Make the logos move next to each other on one line /
+.logos-grid {
+    display: flex;
+    flex-wrap: nowrap; / Prevent wrapping /
+    gap: 20px; / Add space between the logos /
+    animation: scroll 10s linear infinite; / Animation to scroll the logos /
+  }
+
+  .p-logo-2 {
+    flex-shrink: 0; / Prevent logos from shrinking /
+    width: auto; / Maintain original width /
+  }
+
+  / Animation for horizontal scrolling /
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); / Move all logos to the left /
+    }
+  }
+
+  / To make the logos disappear after scrolling out of view /
+  .scroll-wrapper {
+    overflow: hidden; / Hide logos that move out of the container /
+  }
+
+  .scrolling-wrapper {
+    display: flex; / Place the logos side by side /
+    animation: scroll 20s linear infinite; / Continuous scrolling animation /
+  }
+
+  .scroll-wrapper .logos-grid img {
+    opacity: 1;
+    transition: opacity 1s ease-out; / Fade out effect when logos move out /
+  }
+
+  .scroll-wrapper .logos-grid img.fade-out {
+    opacity: 0; / Set to 0 when you want the logo to fade out */
